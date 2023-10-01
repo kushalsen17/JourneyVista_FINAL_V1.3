@@ -1,0 +1,139 @@
+.form-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  background-color: #052445;
+  color: #eef1ee;
+  border-radius: 6px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.form-header > span {
+  font-weight: bold;
+  font-size: large;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #eef1ee; */
+}
+
+.formTitle {
+  color: #052445;
+  background-color: #eef1ee;
+  padding: 4px;
+  border-radius: 3px;
+  border-bottom: 3px solid #052445;
+}
+
+.form-element {
+  margin: 60px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  inline-size: 500px;
+  overflow-wrap: break-word;
+  color: #052445;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  gap: 6px;
+}
+
+.form-email {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q3 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q4 > span {
+  width: calc(100% + 10px);
+}
+
+.from-q4-radioWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.form-q4-divWrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.form-q5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-q6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-submit-button {
+  border: 2px solid #052445;
+  border-radius: 4px;
+  font-size: larger;
+  height: 50px;
+  width: 150px;
+  padding: 6px;
+  background-color: #052445;
+  color: #eef1ee;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.form-submit-button:hover {
+  border: 2px solid #052445;
+  /* transform: scale(1.02); */
+  background-color: #eef1ee;
+  color: #052445;
+  font-weight: bold;
+}

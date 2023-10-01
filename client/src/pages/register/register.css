@@ -1,0 +1,99 @@
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 40%;
+  gap: 16px;
+  width: fit-content;
+}
+
+.rHeader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.register-header {
+  font-size: larger;
+  background-color: #052445;
+  color: white;
+  padding: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 4px;
+  text-align: center;
+  right: 100px;
+}
+
+.register-username,
+.register-email,
+.register-password,
+.register-confirmPassword,
+.register-country,
+.register-contact,
+.register-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.register-submit-btn,
+.goHome-btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #052445;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+  width: 100%;
+}
+
+.goHome-btn:hover {
+  background-color: #052445f1;
+}
+
+.register-submit-btn:hover {
+  transform: scale(1.025);
+}
+
+.register-submit-btn:disabled {
+  background-color: #052445;
+  cursor: not-allowed;
+}
+
+.rErrorMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  color: #052445;
+}
+
+.rInput {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #052445;
+  height: 30px;
+  padding: 10px;
+}
+
+.icons {
+  color: #052445;
+}
+
+.loginNav-btn {
+  border: none;
+  color: #052445;
+  text-decoration: underline;
+  background-color: white;
+  cursor: pointer;
+}

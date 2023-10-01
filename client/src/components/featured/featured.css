@@ -1,0 +1,36 @@
+.featured{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+
+.featuredItem{
+  position: relative;
+  color: #EEF1EE;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+  flex:1;
+  transition: all .2s ease-in-out;
+}
+
+.featuredImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredTitles{
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.789);
+  color: #052445;
+  width: 100%;
+}
+
+.featuredItem:hover{
+  transform: scale(1.025);
+}

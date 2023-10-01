@@ -1,0 +1,17 @@
+https://docs.google.com/forms/d/e/1FAIpQLSdjFvkAgFOqfE2OvzJMb1-M2913D-TUgEzx1WHencs3m9gVWA/formResponse
+
+ ?usp=pp_url&
+ 
+ entry.2088789462=gmail
+
+ entry.2004991036=hotel-stay:Q1
+ 
+ entry.80077597=features-liked:Q2
+ 
+ entry.1587277809=5
+ 
+ entry.2113157978=10
+ 
+ entry.1993697693=improve-feature:Q5
+ 
+ entry.821418759=issues:Q6

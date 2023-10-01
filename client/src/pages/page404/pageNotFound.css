@@ -1,0 +1,14 @@
+.pageNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 300px;
+  padding: 16px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  background-color: #ec1607;
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
+}
