@@ -73,34 +73,9 @@ const Reserve = ({ setOpen, hotelId }) => {
 
 
   async function onToken(token) {
-    // try{
 
-    //   const customer= await stripe.customer.create({
-    //     email:token.email,
-    //     source:token.id  
-    //   })
-
-    //   const payment=await stripe.charges.create({
-
-    //     amount:itemPrice,
-    //     customer:customer.id,
-    //     currency:"inr",
-    //     receipt_email:token.email
-      
-    //   },{
-    //     idempotancyKey:uuidv4()
-    //   })
-
-    //   if(payment)
-    //   {
-    //     res.send('Payment Successful, Your Room is Booked')
-    //   }
-  
-    // }catch(error){
-    //   return res.status(400).json({error});
-  
-    // }
     console.log(token)
+    console.log("Successfull Payment")
  
   }
   
