@@ -34,6 +34,7 @@ const Login = () => {
 
 
   return (
+    <form>
     <div className="login">
       <div className="leader-wrapper">
         <span className="login-header">Login</span>
@@ -58,6 +59,7 @@ const Login = () => {
             id="password"
             onChange={handleChange}
             className="lInput"
+            autoComplete="on"
             size={35}
           />
         </div>
@@ -76,6 +78,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </form>
   );
 };
 

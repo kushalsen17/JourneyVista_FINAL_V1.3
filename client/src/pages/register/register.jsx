@@ -22,10 +22,11 @@ export const Register = () => {
     const navigate = useNavigate();
 
     async function register() {
+        // e.preventDefault();
         if (password == cpassword) {
 
             const user = {
-                username, email, password, country, city, phone
+                username, email, country, city,phone,password
             }
             try {
                 const res = await axios.post('/auth/register', user)
@@ -40,7 +41,8 @@ export const Register = () => {
     }
 
     return (
-        <form method="post">
+        <>
+        <form method="post" id="form">
             <div className="register-container">
                 <div className="rHeader-wrapper">
                     <span className="register-header">Register</span>
@@ -48,49 +50,51 @@ export const Register = () => {
                 <div className="register-username ">
                     <span><FontAwesomeIcon icon={faUser} className="icons" /></span>
                     <input type="text" className="form-control rInput" placeholder="Your Full Name"
-                        value={username} onChange={(e) => { setName(e.target.value) }} required size={30} />
+                        value={username} onChange={(e) => { setName(e.target.value) }} required />
                 </div>
                 <div className="register-email ">
                     <span><FontAwesomeIcon icon={faEnvelope} className="icons" /></span>
                     <input type="email" className="form-control rInput" placeholder="Your Email"
-                        value={email} onChange={(e) => { setEmail(e.target.value) }} required size={30} />
+                        value={email} onChange={(e) => { setEmail(e.target.value) }} required />
                 </div>
                 <div className="register-password ">
                     <span><FontAwesomeIcon icon={faKey} className="icons" /></span>
                     <input type="password" className="form-control rInput" placeholder="Password"
-                        value={password} onChange={(e) => { setPassword(e.target.value) }} required size={30} />
+                        value={password} onChange={(e) => { setPassword(e.target.value) }} required autoComplete="on" />
                 </div>
                 <div className="register-confirmPassword ">
                     <span><FontAwesomeIcon icon={faKey} className="icons" /></span>
                     <input type="password" className="form-control rInput" placeholder="Confirm Password"
-                        value={cpassword} onChange={(e) => { setConfirmPassword(e.target.value) }} required size={30} />
+                        value={cpassword} onChange={(e) => { setConfirmPassword(e.target.value) }} required autoComplete="on" />
                 </div>
                 <div className="register-contact">
                     <span><FontAwesomeIcon icon={faPhone} className="icons" /></span>
                     <input type="tel" className="form-control rInput" placeholder="Your Contact"
-                        value={phone} onChange={(e) => { setPhone(e.target.value) }} required size={30} />
+                        value={phone} onChange={(e) => { setPhone(e.target.value) }} required />
                 </div>
                 <div className="register-city ">
                     <span><FontAwesomeIcon icon={faCity} className="icons" /></span>
                     <input type="text" className="form-control rInput" placeholder="Your City"
-                        value={city} onChange={(e) => { setCity(e.target.value) }} required size={30} />
+                        value={city} onChange={(e) => { setCity(e.target.value) }} required />
                 </div>
                 <div className="register-country ">
                     <span><FontAwesomeIcon icon={faEarthAmericas} className="icons" /></span>
                     <input type="text" className="form-control rInput" placeholder="Your Country"
-                        value={country} onChange={(e) => { setCountry(e.target.value) }} required size={30} />
+                        value={country} onChange={(e) => { setCountry(e.target.value) }} required />
                 </div>
-                <button className="register-submit-btn" onClick={() => { register && navigate("/login") }}>Register</button>
+                <button className="register-submit-btn" onClick={() => {register() && navigate("/login")}}>Register</button> 
                 {error && <span className="rErrorMsg">{error.message.data}</span>}
-                <div className="loginNav">
-                    <button className="loginNav-btn" onClick={() => { navigate("/login") }}>Have an account? Click here!</button>
-                </div>
+            </div>
+        </form>
                 <div className="goHome">
                     <button className="goHome-btn" onClick={() => { navigate("/") }}>Go to Home</button>
                 </div>
-            </div>
-        </form>
+                <div className="loginNav">
+                    <button className="loginNav-btn" onClick={() => { navigate("/login") }}>Have an account? Click here!</button>
+                </div>
+        </>
+
     )
 }
-
+// && navigate("/login") 
 export default Register;
