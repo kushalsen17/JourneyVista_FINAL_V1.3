@@ -11,11 +11,8 @@ const Login = () => {
     username: undefined,
     password: undefined,
   });
-
   const { loading, error, dispatch } = useContext(AuthContext);
-
   const navigate = useNavigate()
-
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
@@ -31,7 +28,6 @@ const Login = () => {
       dispatch({ type: "LOGIN_FAILURE", payload: err.response.data });
     }
   };
-
 
   return (
     <form>

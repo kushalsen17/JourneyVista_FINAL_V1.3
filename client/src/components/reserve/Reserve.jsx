@@ -67,8 +67,6 @@ const Reserve = ({ setOpen, hotelId }) => {
     } catch (err) { }
   };
 
-
-
   async function onToken(token) {
 
     console.log(token)
@@ -112,7 +110,6 @@ const Reserve = ({ setOpen, hotelId }) => {
             </div>
           </div>
         ))}
-
         <StripeCheckout
           amount={itemPrice * 100}
           currency="INR"

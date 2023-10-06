@@ -1,13 +1,10 @@
 import "./formUI.css";
-import feedbackBG from "./feedbackFormBG.png"
 
 export const FeedbackForm = () => {
 
     return (
         <div className="form-container"
             style={{
-                // backgroundImage: `url(${feedbackBG})`,
-                // backgroundSize : "cover"
                 backgroundColor : "#052445"
             }}
         >

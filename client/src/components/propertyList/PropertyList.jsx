@@ -1,12 +1,6 @@
 import useFetch from "../../hooks/useFetch";
 import "./propertyList.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHotel,
-  faBuilding
-} from "@fortawesome/free-solid-svg-icons";
-import { MdOutlineCabin, MdOutlineVilla } from "react-icons/md";
-import { RiHotelLine } from "react-icons/ri";
+
 
 const PropertyList = () => {
   const { data, loading, error } = useFetch("/hotels/countByType");
@@ -40,14 +34,6 @@ const PropertyList = () => {
             ))}
         </>
       )}
-      {/* 
-          #   Icons::
-        <FontAwesomeIcon icon={faHotel} /> <<-- For hotel icon
-        <FontAwesomeIcon icon={faBuilding} /> <<-- For apartment icon
-        <RiHotelLine /> <<-- For resort icon
-        <MdOutlineVilla /> <<-- For villa icon
-        <MdOutlineCabin /> <<-- For cabin icon
-      */}
     </div>
   );
 };

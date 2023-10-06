@@ -5,8 +5,6 @@ import { AuthContext } from "../../context/AuthContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faKey, faEnvelope, faPhone, faEarthAmericas, faCity } from "@fortawesome/free-solid-svg-icons";
 import "./register.css";
-
-
 export const Register = () => {
 
     const [username, setName] = useState('');

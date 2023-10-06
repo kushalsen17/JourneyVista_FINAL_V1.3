@@ -1,6 +1,5 @@
 import "./hotel.css";
 import Navbar from "../../components/navbar/Navbar";
-// import Header from "../../components/header/Header";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -66,7 +65,6 @@ const Hotel = () => {
   return (
     <div>
       <Navbar />
-      {/* <Header type="list" /> */}
       {loading ? (
         "loading"
       ) : (
@@ -98,7 +96,6 @@ const Hotel = () => {
             </div>
           )}
           <div className="hotelWrapper">
-            {/* <button className="bookNow">Reserve or Book Now!</button> */}
             <h1 className="hotelTitle">{data.name}</h1>
             <div className="hotelAddress">
               <FontAwesomeIcon icon={faLocationDot} />
