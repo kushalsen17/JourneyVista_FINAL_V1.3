@@ -7,9 +7,6 @@ import { useContext, useState } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import { v4 as uuidv4 } from 'uuid';
-// const stripe=require('stripe')('sk_test_51NrlYGSEIDDuA5VmivfxpUKhj0Nc61j7UcIderxKmQpFqEmw2vrzEocc2dpkkxbjIrAlZV64OTkMex7ZX8B56Inm00rcWZ9bd4')
-
 
 
 const Reserve = ({ setOpen, hotelId }) => {
