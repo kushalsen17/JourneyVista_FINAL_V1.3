@@ -82,14 +82,14 @@ export const Register = () => {
                 </div>
                 <button className="register-submit-btn" onClick={() => {register() && navigate("/login")}}>Register</button> 
                 {error && <span className="rErrorMsg">{error.message.data}</span>}
-            </div>
-        </form>
                 <div className="goHome">
                     <button className="goHome-btn" onClick={() => { navigate("/") }}>Go to Home</button>
                 </div>
                 <div className="loginNav">
                     <button className="loginNav-btn" onClick={() => { navigate("/login") }}>Have an account? Click here!</button>
                 </div>
+            </div>
+        </form>
         </>
 
     )
