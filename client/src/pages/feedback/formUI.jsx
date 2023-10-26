@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./formUI.css";
 
 export const FeedbackForm = () => {
 
+    const navigate = useNavigate();
     return (
         <div className="form-container"
             style={{
@@ -120,7 +122,7 @@ export const FeedbackForm = () => {
                     </div>
                     <br />
                     <div class="form-submit">
-                        <button className="form-submit-button " type="submit">Submit</button>
+                        <button className="form-submit-button" type="submit" onClick={() => { navigate('/') }}>Submit</button>
                     </div>
                 </div>
             </form>
