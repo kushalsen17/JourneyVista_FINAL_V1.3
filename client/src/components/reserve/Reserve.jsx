@@ -70,7 +70,7 @@ const Reserve = ({ setOpen, hotelId }) => {
   async function onToken(token) {
 
     console.log(token)
-    console.log("Successfull Payment")
+    alert("Successfull Payment")
  
   }
   
